@@ -1,0 +1,250 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background: #dadada;
+}
+
+/* Section cover */
+#cover {
+    position: relative;
+    height: 100vh;
+    background: url('images/cover.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cover .overlay {
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 50px;
+    color: #fff;
+}
+
+#cover .overlay h1 {
+    font-size: 3.5rem;
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#cover .overlay h3 {
+    margin: 20px 0;
+    font-weight: normal;
+}
+
+#cover .overlay p {
+    margin-bottom: 10px;
+}
+
+#message {
+  width: 270px;
+  min-height: 100px;
+  max-height: 100px;
+  resize: none; /* empêche de tirer la zone */
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 8px;
+  font-size: 14px;
+  margin: auto;
+}
+
+#countdown {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 5px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.arrow i {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+/* Animation de flèche */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(10px);}
+    60% {transform: translateY(5px);}
+}
+
+/* Section description */
+#description, #infos, #localisation, #formulaire {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#description h2 {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+#infos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#infos h2 {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+#infos .card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 10px;
+    text-align: center;
+    /* Ajout de l'ombre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Effet hover pour dynamisme */
+#infos .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#infos .card i {
+    font-size: 1.5rem;
+    color: #df940a;
+    margin-bottom: 10px;
+}
+
+#infos .card h4 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#infos .card P {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.team {
+    width: 350px;
+    margin: auto;
+    height: auto;
+    border-radius: 8px;
+}
+
+#localisation h2 {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+#formulaire .info {
+    background: #df940a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    /* Ajout de l'ombre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: 300;
+    font-style: italic;
+    color: #000;
+}
+
+#formulaire h2{
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+/* Formulaire */
+#formulaire form {
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    /* Ajout de l'ombre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#formulaire input, #formulaire button {
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #c0bfbf;
+}
+
+#formulaire button {
+    background: #df940a;
+    color: #fff;
+    border: 1px solid #df940a;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#formulaire button:hover {
+    background: #FFF;
+    color: #df940a;
+    border: 1px solid #df940a;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 20px;  
+}
+
+select {
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 0px 20px;  
+}
+
+.hidden { display: none; }
+
+/* Footer */
+footer {
+    background: #df940a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
